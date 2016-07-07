@@ -1,0 +1,11 @@
+---
+
+- hosts: hubot
+  roles:
+    - ansible-hubot
+
+  vars:
+    hubot_adapter: irc
+    hubot_env:
+        HUBOT_IRC_SERVER: irc.mibbit.com
+        HUBOT_IRC_ROOMS: "#hubot-test"
